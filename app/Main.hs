@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import Lib (convert)
 
 main :: IO ()
-main = someFunc
+main = convert

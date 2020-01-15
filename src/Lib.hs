@@ -1,6 +1,10 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Lib
-    ( someFunc
+    ( convert
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+import Turtle.Prelude(procs)
+
+convert :: IO ()
+convert = procs "convert" ["/Users/ken.ding/Downloads/IMG_8817.HEIC", "/Users/ken.ding/Downloads/IMG_8817.jpg"] mempty
